@@ -20,8 +20,7 @@ else:
     import tty
 
 
-# TwistMsg = Twist
-# TwistMsg = TwistStamped
+# TwistMsg = Twist # removed this for twiststamped to work! (7/11/25)
 
 msg = """
 Reading from the keyboard  and Publishing to Twist!
