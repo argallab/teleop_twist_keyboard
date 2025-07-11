@@ -20,7 +20,8 @@ else:
     import tty
 
 
-TwistMsg = Twist
+# TwistMsg = Twist
+# TwistMsg = TwistStamped
 
 msg = """
 Reading from the keyboard  and Publishing to Twist!
@@ -208,6 +209,7 @@ if __name__=="__main__":
     key_timeout = rospy.get_param("~key_timeout", 0.5)
     stamped = rospy.get_param("~stamped", False)
     twist_frame = rospy.get_param("~frame_id", '')
+    TwistMsg = Twist
     if stamped:
         TwistMsg = TwistStamped
 
